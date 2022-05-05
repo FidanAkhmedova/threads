@@ -15,7 +15,7 @@ public class Main {
         thread1.join();
         thread2.join();
     }
-    //
+    //1
     public static void firstMethod() {
         int size = 20;
         float[] arr = new float[size];
