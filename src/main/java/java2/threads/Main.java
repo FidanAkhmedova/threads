@@ -35,7 +35,6 @@ public class Main {
                 startTime) + " ms.");
         printArray(arr);
     }
-
     //2
     public static void secondMethod(Thread thread1, Thread thread2) {
         int size = 10;
