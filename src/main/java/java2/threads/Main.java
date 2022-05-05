@@ -85,8 +85,10 @@ public class Main {
     }
 }
  class MyThread extends Thread {
-    @Override
-    public void run() {
+    String threadName;
+//    @Override
+    public void run(String name) {
+        threadName = name;
         System.out.println("thread starting");
         System.out.println(Thread.currentThread().getName());
     }
