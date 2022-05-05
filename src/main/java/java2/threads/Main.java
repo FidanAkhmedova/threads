@@ -15,6 +15,11 @@ public class Main {
         thread1.join();
         thread2.join();
     }
+    public static void printArray(float[] arr){
+        for (int j = 0; j < arr.length; j++) {
+            System.out.println(arr[j]);
+        }
+    }
     //1
     public static void firstMethod() {
         int size = 20;
@@ -30,11 +35,7 @@ public class Main {
                 startTime) + " ms.");
         printArray(arr);
     }
-    public static void printArray(float[] arr){
-        for (int j = 0; j < arr.length; j++) {
-            System.out.println(arr[j]);
-        }
-    }
+
     //2
     public static void secondMethod(Thread thread1, Thread thread2) {
         int size = 10;
