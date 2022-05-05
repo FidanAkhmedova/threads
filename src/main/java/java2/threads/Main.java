@@ -20,7 +20,6 @@ public class Main {
             System.out.println(arr[j]);
         }
     }
-    //1
     public static void firstMethod() {
         int size = 20;
         float[] arr = new float[size];
@@ -35,7 +34,6 @@ public class Main {
                 startTime) + " ms.");
         printArray(arr);
     }
-    //2
     public static void secondMethod(Thread thread1, Thread thread2) {
         int size = 10;
         float[] arr = new float[size];
@@ -50,7 +48,7 @@ public class Main {
         System.arraycopy(arr, 0, a1, 0, h);
         System.currentTimeMillis();
         System.out.println(System.currentTimeMillis() - a);
-        System.out.println("end time for separating arrays");
+//        System.out.println("end time for separating arrays");
         thread1.start();
         thread2.start();
         synchronized (obj1) {
@@ -86,9 +84,8 @@ public class Main {
 }
  class MyThread extends Thread {
     String threadName;
-//    @Override
-    public void run(String name) {
-        threadName = name;
+    @Override
+    public void run() {
         System.out.println("thread starting");
         System.out.println(Thread.currentThread().getName());
     }
